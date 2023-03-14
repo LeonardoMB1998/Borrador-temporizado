@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Borrador Temporizado</title>
+  <link rel="stylesheet" href="depen/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/iconos/style.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- <button class="btn btn-block" onclick="reiniciar()">R</button> -->
+<!-- cols="30" -->
+<div id="v1" class="v1">
+  <textarea id="inputDir" rows="5" class="form-control" placeholder="Escribe el directorio o arrastra los archivos aquí"></textarea>
+  <br>
+  <div class="form-row">
+   <div class="col-6">
+     <input id="inputSegundos" min="0" type="number" class="form-control" placeholder="Segundos">
+   </div>
+   <div class="col">
+     <button id="btnComenzar" class="btn btn-danger btn-block" style="float: right;" disabled>Comenzar</button>
+   </div>
+  </div>
+</div>
+
+<div id="v2" class="v2" hidden>
+  <div>
+    <h1 class="contador" id="contador">0</h1>
+  </div>
+  <div>
+    <button class="btn btn-outline-primary" onclick="reiniciar()">Volver</button>
+  </div>
+</div>
+
+
+
+
+
+  <script src="depen/jquery-3.6.0.min.js" onload="window.$ = window.jQuery = module.exports;"></script>
+  <script src="depen/bootstrap/bootstrap.js"></script>
+  <!-- <script src="depen/Sortable.js"></script> -->
+  
+  <script>
+    function reiniciar()
+    {
+      window.location.reload();  
+    }
+  </script>
+
+  <script src="js/app.js"></script>
+
+</body>
+</html>

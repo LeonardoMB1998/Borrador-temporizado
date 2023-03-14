@@ -1,0 +1,27 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.v1{
+  padding: 10px;
+}
+/* +58 04 12 0753551 */
+
+.v2{
+  text-align: center;
+  background-color: brown;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contador{
+  font-size: 60vh;
+  color: #fff;
+}
